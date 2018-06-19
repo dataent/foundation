@@ -1,0 +1,389 @@
+<!-- title: Department -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Department</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.31</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/dataent/epaas/tree/develop/epaas/hr/doctype/department"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabDepartment</code></p>
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>department_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Department
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>parent_department</code></td>
+            <td >
+                Link</td>
+            <td >
+                Parent Department
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department">Department</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>is_group</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Group
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>4</td>
+            <td ><code>section_break_4</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>leave_block_list</code></td>
+            <td >
+                Link</td>
+            <td >
+                Leave Block List
+                <p class="text-muted small">
+                    Days for which Holidays are blocked for this department.</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/leave_block_list">Leave Block List</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>6</td>
+            <td ><code>leave_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Leave Approvers
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>leave_approver</code></td>
+            <td >
+                Table</td>
+            <td >
+                Leave Approver
+                <p class="text-muted small">
+                    The first Leave Approver in the list will be set as the default Leave Approver.</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department_approver">Department Approver</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>8</td>
+            <td ><code>expense_section</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Expense Approvers
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>expense_approver</code></td>
+            <td >
+                Table</td>
+            <td >
+                Expense Approver
+                <p class="text-muted small">
+                    The first Expense Approver in the list will be set as the default Expense Approver.</p>
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/hr/department_approver">Department Approver</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>lft</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                lft
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>rgt</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                rgt
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>old_parent</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Old Parent
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>epaas.hr.doctype.department.department</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>Department</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from dataent.utils.nestedset.NestedSet</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.hr.doctype.department.department.on_doctype_update" href="#epaas.hr.doctype.department.department.on_doctype_update" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.hr.doctype.department.department.<b>on_doctype_update</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/assets/asset">Asset</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/education/course">Course</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/department">Department</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee">Employee</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_attendance_tool">Employee Attendance Tool</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/employee_internal_work_history">Employee Internal Work History</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/education/instructor">Instructor</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/education/instructor_log">Instructor Log</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/leave_control_panel">Leave Control Panel</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/hr/payroll_entry">Payroll Entry</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/education/program">Program</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/selling/sms_center">SMS Center</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

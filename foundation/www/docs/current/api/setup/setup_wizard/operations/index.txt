@@ -1,0 +1,7 @@
+epaas.setup.setup_wizard.operations.default_website
+epaas.setup.setup_wizard.operations.defaults_setup
+epaas.setup.setup_wizard.operations.sample_data
+epaas.setup.setup_wizard.operations.company_setup
+epaas.setup.setup_wizard.operations.taxes_setup
+epaas.setup.setup_wizard.operations.install_fixtures
+epaas.setup.setup_wizard.operations

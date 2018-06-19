@@ -1,0 +1,2 @@
+epaas.healthcare.web_form.lab_test.lab_test
+epaas.healthcare.web_form.lab_test

@@ -1,0 +1,253 @@
+<!-- title: epaas.controllers.accounts_controller -->
+<!-- add-breadcrumbs --><h1>epaas.controllers.accounts_controller</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.31</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/dataent/epaas/blob/develop/epaas/controllers/accounts_controller.py"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>AccountsController</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from epaas.utilities.transaction_base.TransactionBase</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.get_advance_journal_entries" href="#epaas.controllers.accounts_controller.get_advance_journal_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>get_advance_journal_entries</b>
+        <i class="text-muted">(party_type, party, party_account, amount_field, order_doctype, order_list, include_unallocated=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.get_advance_payment_entries" href="#epaas.controllers.accounts_controller.get_advance_payment_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>get_advance_payment_entries</b>
+        <i class="text-muted">(party_type, party, party_account, order_doctype, order_list=None, include_unallocated=True, against_all_orders=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/epaas.controllers.accounts_controller.get_default_taxes_and_charges</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.get_default_taxes_and_charges" href="#epaas.controllers.accounts_controller.get_default_taxes_and_charges" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>get_default_taxes_and_charges</b>
+        <i class="text-muted">(master_doctype, tax_template=None, company=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.get_due_date" href="#epaas.controllers.accounts_controller.get_due_date" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>get_due_date</b>
+        <i class="text-muted">(term, posting_date=None, bill_date=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/epaas.controllers.accounts_controller.get_payment_term_details</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.get_payment_term_details" href="#epaas.controllers.accounts_controller.get_payment_term_details" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>get_payment_term_details</b>
+        <i class="text-muted">(term, posting_date=None, grand_total=None, bill_date=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/epaas.controllers.accounts_controller.get_payment_terms</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.get_payment_terms" href="#epaas.controllers.accounts_controller.get_payment_terms" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>get_payment_terms</b>
+        <i class="text-muted">(terms_template, posting_date=None, grand_total=None, bill_date=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/epaas.controllers.accounts_controller.get_tax_rate</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.get_tax_rate" href="#epaas.controllers.accounts_controller.get_tax_rate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>get_tax_rate</b>
+        <i class="text-muted">(account_head)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/epaas.controllers.accounts_controller.get_taxes_and_charges</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.get_taxes_and_charges" href="#epaas.controllers.accounts_controller.get_taxes_and_charges" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>get_taxes_and_charges</b>
+        <i class="text-muted">(master_doctype, master_name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.set_balance_in_account_currency" href="#epaas.controllers.accounts_controller.set_balance_in_account_currency" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>set_balance_in_account_currency</b>
+        <i class="text-muted">(gl_dict, account_currency=None, conversion_rate=None, company_currency=None)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.update_invoice_status" href="#epaas.controllers.accounts_controller.update_invoice_status" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>update_invoice_status</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.validate_conversion_rate" href="#epaas.controllers.accounts_controller.validate_conversion_rate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>validate_conversion_rate</b>
+        <i class="text-muted">(currency, conversion_rate, conversion_rate_label, company)</i>
+    </p>
+	<div class="docs-attr-desc"><p>common validation for currency and price list currency</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.validate_inclusive_tax" href="#epaas.controllers.accounts_controller.validate_inclusive_tax" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>validate_inclusive_tax</b>
+        <i class="text-muted">(tax, doc)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.controllers.accounts_controller.validate_taxes_and_charges" href="#epaas.controllers.accounts_controller.validate_taxes_and_charges" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.controllers.accounts_controller.<b>validate_taxes_and_charges</b>
+        <i class="text-muted">(tax)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+
+<!-- autodoc -->

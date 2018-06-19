@@ -1,0 +1,2 @@
+epaas.stock.dashboard
+epaas.stock.dashboard.item_dashboard

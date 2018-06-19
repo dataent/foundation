@@ -1,0 +1,13 @@
+epaas.controllers.buying_controller
+epaas.controllers.item_variant
+epaas.controllers.trends
+epaas.controllers.sales_and_purchase_return
+epaas.controllers.stock_controller
+epaas.controllers.selling_controller
+epaas.controllers.status_updater
+epaas.controllers.website_list_for_contact
+epaas.controllers.taxes_and_totals
+epaas.controllers
+epaas.controllers.queries
+epaas.controllers.accounts_controller
+epaas.controllers.print_settings

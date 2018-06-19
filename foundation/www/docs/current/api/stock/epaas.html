@@ -1,0 +1,189 @@
+<!-- title: epaas.stock.stock_ledger -->
+<!-- add-breadcrumbs --><h1>epaas.stock.stock_ledger</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.31</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/dataent/epaas/blob/develop/epaas/stock/stock_ledger.py"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>NegativeStockError</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from dataent.exceptions.ValidationError</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.stock.stock_ledger.delete_cancelled_entry" href="#epaas.stock.stock_ledger.delete_cancelled_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.stock_ledger.<b>delete_cancelled_entry</b>
+        <i class="text-muted">(voucher_type, voucher_no)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.stock.stock_ledger.get_previous_sle" href="#epaas.stock.stock_ledger.get_previous_sle" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.stock_ledger.<b>get_previous_sle</b>
+        <i class="text-muted">(args, for_update=False)</i>
+    </p>
+	<div class="docs-attr-desc"><pre><code>    get the last sle on or before the current time-bucket,
+    to get actual qty before transaction, this function
+    is called from various transaction like stock entry, reco etc
+
+    args = {
+        "item_code": "ABC",
+        "warehouse": "XYZ",
+        "posting_date": "2012-12-12",
+        "posting_time": "12:00",
+        "sle": "name of reference Stock Ledger Entry"
+    }
+</code></pre>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.stock.stock_ledger.get_stock_ledger_entries" href="#epaas.stock.stock_ledger.get_stock_ledger_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.stock_ledger.<b>get_stock_ledger_entries</b>
+        <i class="text-muted">(previous_sle, operator=None, order=desc, limit=None, for_update=False, debug=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p>get stock ledger entries filtered by specific posting datetime conditions</p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.stock.stock_ledger.get_valuation_rate" href="#epaas.stock.stock_ledger.get_valuation_rate" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.stock_ledger.<b>get_valuation_rate</b>
+        <i class="text-muted">(item_code, warehouse, voucher_type, voucher_no, allow_zero_rate=False, currency=None, company=None, raise_error_if_no_rate=True)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.stock.stock_ledger.make_entry" href="#epaas.stock.stock_ledger.make_entry" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.stock_ledger.<b>make_entry</b>
+        <i class="text-muted">(args, allow_negative_stock=False, via_landed_cost_voucher=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.stock.stock_ledger.make_sl_entries" href="#epaas.stock.stock_ledger.make_sl_entries" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.stock_ledger.<b>make_sl_entries</b>
+        <i class="text-muted">(sl_entries, is_amended=None, allow_negative_stock=False, via_landed_cost_voucher=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.stock.stock_ledger.set_as_cancel" href="#epaas.stock.stock_ledger.set_as_cancel" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.stock_ledger.<b>set_as_cancel</b>
+        <i class="text-muted">(voucher_type, voucher_no)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>update_entries_after</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from builtins.object</i></h4>
+    
+    <div class="docs-attr-desc"><pre><code>    update valution rate and qty after transaction
+    from the current time-bucket onwards
+</code></pre>
+
+<p><strong>Parameters:</strong></p>
+
+<ul>
+<li><p><strong><code>args</code></strong> -  args as dict</p>
+
+<pre><code>    args = {
+        "item_code": "ABC",
+        "warehouse": "XYZ",
+        "posting_date": "2012-12-12",
+        "posting_time": "12:00"
+    }
+</code></pre></li>
+</ul>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+
+
+<!-- autodoc -->

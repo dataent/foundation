@@ -1,0 +1,830 @@
+<!-- title: Warehouse -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Warehouse</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.31</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/dataent/epaas/tree/develop/epaas/stock/doctype/warehouse"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabWarehouse</code></p>
+
+
+A logical Warehouse against which stock entries are made.
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr class="info">
+            <td>1</td>
+            <td ><code>warehouse_detail</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Warehouse Detail
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>warehouse_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Warehouse Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>is_group</code></td>
+            <td >
+                Check</td>
+            <td >
+                Is Group
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>disabled</code></td>
+            <td >
+                Check</td>
+            <td >
+                Disabled
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>column_break_4</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr class="info">
+            <td>8</td>
+            <td ><code>address_and_contact</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Address and Contact
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>address_html</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Address HTML
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>column_break_10</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>contact_html</code></td>
+            <td >
+                HTML</td>
+            <td >
+                Contact HTML
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>warehouse_contact_info</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Warehouse Contact Info
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>email_id</code></td>
+            <td >
+                Data</td>
+            <td class="text-muted" title="Hidden">
+                Email Address
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>phone_no</code></td>
+            <td >
+                Data</td>
+            <td >
+                Phone No
+                
+            </td>
+            <td>
+                <pre>Phone</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>mobile_no</code></td>
+            <td >
+                Data</td>
+            <td >
+                Mobile No
+                
+            </td>
+            <td>
+                <pre>Phone</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>column_break0</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>address_line_1</code></td>
+            <td >
+                Data</td>
+            <td >
+                Address Line 1
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>address_line_2</code></td>
+            <td >
+                Data</td>
+            <td >
+                Address Line 2
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>city</code></td>
+            <td >
+                Data</td>
+            <td >
+                City
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>state</code></td>
+            <td >
+                Data</td>
+            <td >
+                State
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>21</td>
+            <td ><code>pin</code></td>
+            <td >
+                Data</td>
+            <td >
+                PIN
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>22</td>
+            <td ><code>tree_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Tree Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>parent_warehouse</code></td>
+            <td >
+                Link</td>
+            <td >
+                Parent Warehouse
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>lft</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                lft
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>rgt</code></td>
+            <td >
+                Int</td>
+            <td class="text-muted" title="Hidden">
+                rgt
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>old_parent</code></td>
+            <td >
+                Link</td>
+            <td class="text-muted" title="Hidden">
+                Old Parent
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>epaas.stock.doctype.warehouse.warehouse</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>Warehouse</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from dataent.utils.nestedset.NestedSet</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/epaas.stock.doctype.warehouse.warehouse.add_node</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="epaas.stock.doctype.warehouse.warehouse.add_node" href="#epaas.stock.doctype.warehouse.warehouse.add_node" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.doctype.warehouse.warehouse.<b>add_node</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/epaas.stock.doctype.warehouse.warehouse.convert_to_group_or_ledger</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="epaas.stock.doctype.warehouse.warehouse.convert_to_group_or_ledger" href="#epaas.stock.doctype.warehouse.warehouse.convert_to_group_or_ledger" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.doctype.warehouse.warehouse.<b>convert_to_group_or_ledger</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/epaas.stock.doctype.warehouse.warehouse.get_children</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="epaas.stock.doctype.warehouse.warehouse.get_children" href="#epaas.stock.doctype.warehouse.warehouse.get_children" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.stock.doctype.warehouse.warehouse.<b>get_children</b>
+        <i class="text-muted">(doctype, parent=None, company=None, is_root=False)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+        <h4>Linked In:</h4>
+        <ul>
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/assets/asset">Asset</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/assets/asset_movement">Asset Movement</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/bin">Bin</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/bom_explosion_item">BOM Explosion Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/bom_item">BOM Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/agriculture/crop">Crop</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/delivery_note">Delivery Note</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/delivery_note_item">Delivery Note Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/item">Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/item_reorder">Item Reorder</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/manufacturing_settings">Manufacturing Settings</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/material_request_item">Material Request Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/material_request_plan_item">Material Request Plan Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/packed_item">Packed Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/pos_profile">POS Profile</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/production_plan">Production Plan</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/production_plan_item">Production Plan Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/purchase_invoice">Purchase Invoice</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/purchase_invoice_item">Purchase Invoice Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/buying/purchase_order">Purchase Order</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/buying/purchase_order_item">Purchase Order Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/buying/purchase_order_item_supplied">Purchase Order Item Supplied</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/purchase_receipt">Purchase Receipt</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/purchase_receipt_item">Purchase Receipt Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/selling/quotation_item">Quotation Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/buying/request_for_quotation_item">Request for Quotation Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/accounts/sales_invoice_item">Sales Invoice Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/selling/sales_order_item">Sales Order Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/serial_no">Serial No</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/stock_entry">Stock Entry</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/stock_entry_detail">Stock Entry Detail</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/stock_ledger_entry">Stock Ledger Entry</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/stock_reconciliation_item">Stock Reconciliation Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/stock_settings">Stock Settings</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/buying/supplier_quotation_item">Supplier Quotation Item</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/stock/warehouse">Warehouse</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/work_order">Work Order</a>
+
+</li>
+			
+        
+			
+            <li>
+
+
+<a href="/docs/current/models/manufacturing/work_order_item">Work Order Item</a>
+
+</li>
+			
+        
+        </ul>
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

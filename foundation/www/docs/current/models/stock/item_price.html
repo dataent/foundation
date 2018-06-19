@@ -1,0 +1,283 @@
+<!-- title: Item Price -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Item Price</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.31</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/dataent/epaas/tree/develop/epaas/stock/doctype/item_price"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabItem Price</code></p>
+
+
+Multiple Item prices.
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr class="info">
+            <td>1</td>
+            <td ><code>price_list_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Price List
+                
+            </td>
+            <td>
+                <pre>fa fa-tags</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>price_list</code></td>
+            <td >
+                Link</td>
+            <td >
+                Price List
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/price_list">Price List</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>column_break_3</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td ><code>buying</code></td>
+            <td >
+                Check</td>
+            <td >
+                Buying
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>selling</code></td>
+            <td >
+                Check</td>
+            <td >
+                Selling
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>6</td>
+            <td ><code>item_details</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                
+                
+            </td>
+            <td>
+                <pre>fa fa-tag</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>currency</code></td>
+            <td >
+                Link</td>
+            <td >
+                Currency
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/geo/currency">Currency</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td class="danger" title="Mandatory"><code>item_code</code></td>
+            <td >
+                Link</td>
+            <td >
+                Item Code
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/stock/item">Item</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td class="danger" title="Mandatory"><code>price_list_rate</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Rate
+                
+            </td>
+            <td>
+                <pre>currency</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>col_br_1</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>brand</code></td>
+            <td >
+                Read Only</td>
+            <td >
+                Brand
+                
+            </td>
+            <td>
+                <pre>item_code.brand</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>item_name</code></td>
+            <td >
+                Data</td>
+            <td >
+                Item Name
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>item_description</code></td>
+            <td >
+                Text</td>
+            <td >
+                Item Description
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>epaas.stock.doctype.item_price.item_price</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>ItemPrice</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from dataent.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>ItemPriceDuplicateItem</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from dataent.exceptions.ValidationError</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

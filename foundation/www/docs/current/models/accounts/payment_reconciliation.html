@@ -1,0 +1,323 @@
+<!-- title: Payment Reconciliation -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Payment Reconciliation</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.31</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/dataent/epaas/tree/develop/epaas/accounts/doctype/payment_reconciliation"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+<span class="label label-info">Single</span>
+
+
+
+
+
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr >
+            <td>1</td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td class="danger" title="Mandatory"><code>party_type</code></td>
+            <td >
+                Link</td>
+            <td >
+                Party Type
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/core/doctype">DocType</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td class="danger" title="Mandatory"><code>party</code></td>
+            <td >
+                Dynamic Link</td>
+            <td >
+                Party
+                
+            </td>
+            <td>
+                <pre>party_type</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>receivable_payable_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Receivable / Payable Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td ><code>bank_cash_account</code></td>
+            <td >
+                Link</td>
+            <td >
+                Bank / Cash Account
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/account">Account</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>col_break1</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>from_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                From Invoice Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td ><code>to_date</code></td>
+            <td >
+                Date</td>
+            <td >
+                To Invoice Date
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>minimum_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Minimum Invoice Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>10</td>
+            <td ><code>maximum_amount</code></td>
+            <td >
+                Currency</td>
+            <td >
+                Maximum Invoice Amount
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>get_unreconciled_entries</code></td>
+            <td >
+                Button</td>
+            <td >
+                Get Unreconciled Entries
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>12</td>
+            <td ><code>sec_break1</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Unreconciled Payment Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>payments</code></td>
+            <td >
+                Table</td>
+            <td >
+                Payments
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/payment_reconciliation_payment">Payment Reconciliation Payment</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>reconcile</code></td>
+            <td >
+                Button</td>
+            <td >
+                Reconcile
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>15</td>
+            <td ><code>sec_break2</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Invoice/Journal Entry Details
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>invoices</code></td>
+            <td >
+                Table</td>
+            <td >
+                Invoices
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/accounts/payment_reconciliation_invoice">Payment Reconciliation Invoice</a>
+
+
+                
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>epaas.accounts.doctype.payment_reconciliation.payment_reconciliation</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>PaymentReconciliation</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from dataent.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

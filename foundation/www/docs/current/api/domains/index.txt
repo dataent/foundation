@@ -1,0 +1,10 @@
+epaas.domains.education
+epaas.domains.non_profit
+epaas.domains.manufacturing
+epaas.domains.healthcare
+epaas.domains.distribution
+epaas.domains.retail
+epaas.domains
+epaas.domains.services
+epaas.domains.agriculture
+epaas.domains.hospitality

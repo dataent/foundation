@@ -1,0 +1,2 @@
+epaas.hr.email_alert.training_scheduled.training_scheduled
+epaas.hr.email_alert.training_scheduled

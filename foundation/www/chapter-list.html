@@ -1,0 +1,100 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+
+{% set chapters = [
+	{
+		'city': 'Mumbai, India',
+		'meetup-link': 'https://www.meetup.com/EPAAS-Community-Meetup/',
+		'image': '/assets/foundation/img/meetups/mumbai.png',
+		'members': 720
+	},
+	{
+		'city': 'Bengaluru, India',
+		'meetup-link': 'https://www.meetup.com/EPAAS-Bangalore-Community/',
+		'image': '/assets/foundation/img/meetups/bengaluru.png',
+		'members': 590
+	},
+	{
+		'city': 'Bay Area, United States',
+		'meetup-link': 'https://www.meetup.com/EPAAS-Community-Bay-Area/',
+		'image': '/assets/foundation/img/meetups/bay-area.png',
+		'members': 15
+	},
+	{
+		'city': 'Pune, India',
+		'meetup-link': 'https://www.meetup.com/Pune-EPAAS-Meetup/',
+		'image': '/assets/foundation/img/meetups/pune.png',
+		'members': 540
+	},
+	{
+		'city': 'New England, United States',
+		'meetup-link': 'https://www.meetup.com/EPAAS-New-England/',
+		'image': '/assets/foundation/img/meetups/new-england.png',
+		'members': 10
+	},
+	{
+		'city': 'Dubai, UAE',
+		'meetup-link': 'https://www.meetup.com/UAE-EPAAS-Meetup/',
+		'image': '/assets/foundation/img/meetups/dubai.png',
+		'members': 53
+	},
+	{
+		'city': 'Frankfurt, Germany',
+		'meetup-link': 'https://www.meetup.com/EPAAS-Europe/',
+		'image': '/assets/foundation/img/meetups/frankfurt.png',
+		'members': 24
+	},
+	{
+		'city': 'Jakarta, Indonesia',
+		'meetup-link': 'https://www.meetup.com/EPAAS-Jakarta-Community-Meetup/',
+		'image': '/assets/foundation/img/meetups/jakarta.png',
+		'members': 55
+	},
+	{
+		'city': 'Paris, France',
+		'meetup-link': 'https://www.meetup.com/EPAAS-France/',
+		'image': '/assets/foundation/img/meetups/paris.png',
+		'members': 20
+	},
+] %}
+
+<section class='top-section'>
+	<div class='container'>
+		<h1>Chapters</h1>
+		<p class='lead'>
+			Become a part of your local EPAAS Community by joining a chapter near you.
+			If you can't find one, start your own!
+		</p>
+	</div>
+</section>
+<section class='section-padding section-bg'>
+	<div class='container'>
+	<div class='card-deck'>
+	{% for item in chapters %}
+
+	<a href='{{ item['meetup-link' ]}}' target='_blank' class='card mb-4'>
+		<img class="card-img-top greyscale" src="{{ item.image }}" alt="{{ item.city }}">
+		<div class="card-body">
+			<h5>{{ item.city }}</h5>
+			<div class='text-muted'>{{ item.members }} members</div>
+		</div>
+	</a>
+	{% if loop.index is divisibleby 3 %}
+	</div><div class='card-deck'>
+	{% endif %}
+	{% endfor %}
+	</div>
+	</div>
+</section>
+<section class='section-padding'>
+	<div class='container text-center'>
+		<div class='text-muted'>
+			To start your own chapter, start a group on <a href='https://meetup.com' target='_blank'>Meetup.com</a> and get in touch with us.
+		</div>
+		<div>
+		<a class='mt-2 btn-dark btn' href="/contact">Contact Us To Start a New Chapter</a>
+		</div>
+	</div>
+<section>
+{% endblock %}

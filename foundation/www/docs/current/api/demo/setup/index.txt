@@ -1,0 +1,5 @@
+epaas.demo.setup
+epaas.demo.setup.education
+epaas.demo.setup.manufacture
+epaas.demo.setup.setup_data
+epaas.demo.setup.healthcare

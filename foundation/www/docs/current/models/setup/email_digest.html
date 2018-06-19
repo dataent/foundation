@@ -1,0 +1,583 @@
+<!-- title: Email Digest -->
+<!-- add-breadcrumbs -->
+
+
+
+
+
+<h1>Email Digest</h1>
+<div class="dev-header">
+
+<a class="btn btn-default btn-sm" disabled style="margin-bottom: 10px;">
+	Version 10.1.31</a>
+
+
+	<a class="btn btn-default btn-sm" href="https://github.com/dataent/epaas/tree/develop/epaas/setup/doctype/email_digest"
+		target="_blank" style="margin-left: 10px; margin-bottom: 10px;"><i class="octicon octicon-mark-github"></i> Source</a>
+
+</div>
+
+
+
+
+
+    <p><b>Table Name:</b> <code>tabEmail Digest</code></p>
+
+
+Send regular summary reports via Email.
+
+<h3>Fields</h3>
+
+<table class="table table-bordered docfields">
+    <thead>
+        <tr>
+            <th style="width: 5%">Sr</th>
+            <th style="width: 25%">Fieldname</th>
+            <th style="width: 20%">Type</th>
+            <th style="width: 25%">Label</th>
+            <th style="width: 25%">Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr class="info">
+            <td>1</td>
+            <td ><code>settings</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Email Digest Settings
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>2</td>
+            <td ><code>column_break0</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>3</td>
+            <td ><code>enabled</code></td>
+            <td >
+                Check</td>
+            <td >
+                Enabled
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>4</td>
+            <td class="danger" title="Mandatory"><code>company</code></td>
+            <td >
+                Link</td>
+            <td >
+                For Company
+                
+            </td>
+            <td>
+                
+                
+
+
+<a href="/docs/current/models/setup/company">Company</a>
+
+
+                
+            </td>
+        </tr>
+        
+        <tr >
+            <td>5</td>
+            <td class="danger" title="Mandatory"><code>frequency</code></td>
+            <td >
+                Select</td>
+            <td >
+                How frequently?
+                
+            </td>
+            <td>
+                <pre>Daily
+Weekly
+Monthly</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>6</td>
+            <td ><code>next_send</code></td>
+            <td >
+                Data</td>
+            <td >
+                Next email will be sent on:
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>7</td>
+            <td ><code>column_break1</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>8</td>
+            <td class="danger" title="Mandatory"><code>recipient_list</code></td>
+            <td >
+                Code</td>
+            <td >
+                Recipients
+                <p class="text-muted small">
+                    Note: Email will not be sent to disabled users</p>
+            </td>
+            <td>
+                <pre>Email</pre>
+            </td>
+        </tr>
+        
+        <tr >
+            <td>9</td>
+            <td ><code>addremove_recipients</code></td>
+            <td >
+                Button</td>
+            <td >
+                Add/Remove Recipients
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>10</td>
+            <td ><code>accounts</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Accounts
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>11</td>
+            <td ><code>accounts_module</code></td>
+            <td class="info">
+                Column Break</td>
+            <td class="text-muted" title="Hidden">
+                Profit & Loss
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>12</td>
+            <td ><code>income</code></td>
+            <td >
+                Check</td>
+            <td >
+                New Income
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>13</td>
+            <td ><code>expenses_booked</code></td>
+            <td >
+                Check</td>
+            <td >
+                New Expenses
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>14</td>
+            <td ><code>income_year_to_date</code></td>
+            <td >
+                Check</td>
+            <td >
+                Annual Income
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>15</td>
+            <td ><code>expense_year_to_date</code></td>
+            <td >
+                Check</td>
+            <td >
+                Annual Expenses
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>16</td>
+            <td ><code>column_break_16</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                Balance Sheet
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>17</td>
+            <td ><code>bank_balance</code></td>
+            <td >
+                Check</td>
+            <td >
+                Bank Balance
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>18</td>
+            <td ><code>credit_balance</code></td>
+            <td >
+                Check</td>
+            <td >
+                Credit Balance
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>19</td>
+            <td ><code>invoiced_amount</code></td>
+            <td >
+                Check</td>
+            <td >
+                Receivables
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>20</td>
+            <td ><code>payables</code></td>
+            <td >
+                Check</td>
+            <td >
+                Payables
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>21</td>
+            <td ><code>operation</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Operations
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>22</td>
+            <td ><code>column_break_21</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>23</td>
+            <td ><code>sales_order</code></td>
+            <td >
+                Check</td>
+            <td >
+                New Sales Orders
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>24</td>
+            <td ><code>pending_sales_orders</code></td>
+            <td >
+                Check</td>
+            <td >
+                Pending Sales Orders
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>25</td>
+            <td ><code>purchase_order</code></td>
+            <td >
+                Check</td>
+            <td >
+                New Purchase Orders
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>26</td>
+            <td ><code>pending_purchase_orders</code></td>
+            <td >
+                Check</td>
+            <td >
+                Pending Purchase Orders
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>27</td>
+            <td ><code>column_break_operation</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>28</td>
+            <td ><code>new_quotations</code></td>
+            <td >
+                Check</td>
+            <td >
+                New Quotations
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>29</td>
+            <td ><code>pending_quotations</code></td>
+            <td >
+                Check</td>
+            <td >
+                Pending Quotations
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>30</td>
+            <td ><code>issue</code></td>
+            <td >
+                Check</td>
+            <td >
+                Open Issues
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>31</td>
+            <td ><code>project</code></td>
+            <td >
+                Check</td>
+            <td >
+                Open Projects
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr class="info">
+            <td>32</td>
+            <td ><code>other</code></td>
+            <td >
+                Section Break</td>
+            <td >
+                Other
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>33</td>
+            <td ><code>tools</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                Tools
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>34</td>
+            <td ><code>calendar_events</code></td>
+            <td >
+                Check</td>
+            <td >
+                Upcoming Calendar Events
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>35</td>
+            <td ><code>todo_list</code></td>
+            <td >
+                Check</td>
+            <td >
+                Open To Do
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>36</td>
+            <td ><code>notifications</code></td>
+            <td >
+                Check</td>
+            <td >
+                Open Notifications
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>37</td>
+            <td ><code>column_break_32</code></td>
+            <td class="info">
+                Column Break</td>
+            <td >
+                  
+                
+            </td>
+            <td></td>
+        </tr>
+        
+        <tr >
+            <td>38</td>
+            <td ><code>add_quote</code></td>
+            <td >
+                Check</td>
+            <td >
+                Add Quote
+                
+            </td>
+            <td></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+    <hr>
+    <h3>Controller</h3>
+    <h4>epaas.setup.doctype.email_digest.email_digest</h4>
+
+    
+
+
+
+	
+        
+	<h3 style="font-weight: normal;">Class <b>EmailDigest</b></h3>
+    
+    <p style="padding-left: 30px;"><i>Inherits from dataent.model.document.Document</i></h4>
+    
+    <div class="docs-attr-desc"><p></p>
+</div>
+    <div style="padding-left: 30px;">
+        
+    </div>
+    <hr>
+
+	
+
+	
+        
+    
+    <p><span class="label label-info">Public API</span>
+        <br><code>/api/method/epaas.setup.doctype.email_digest.email_digest.get_digest_msg</code>
+    </p>
+	<p class="docs-attr-name">
+        <a name="epaas.setup.doctype.email_digest.email_digest.get_digest_msg" href="#epaas.setup.doctype.email_digest.email_digest.get_digest_msg" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.setup.doctype.email_digest.email_digest.<b>get_digest_msg</b>
+        <i class="text-muted">(name)</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+	
+        
+    
+    
+	<p class="docs-attr-name">
+        <a name="epaas.setup.doctype.email_digest.email_digest.send" href="#epaas.setup.doctype.email_digest.email_digest.send" class="text-muted small">
+            <i class="fa fa-link small" style="color: #ccc;"></i></a>
+		epaas.setup.doctype.email_digest.email_digest.<b>send</b>
+        <i class="text-muted">()</i>
+    </p>
+	<div class="docs-attr-desc"><p><span class="text-muted">No docs</span></p>
+</div>
+	<br>
+
+	
+
+
+    
+    
+
+
+<!-- autodoc -->
+<!-- jinja -->
+<!-- static -->

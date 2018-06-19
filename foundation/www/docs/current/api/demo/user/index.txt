@@ -1,0 +1,10 @@
+epaas.demo.user.projects
+epaas.demo.user.fixed_asset
+epaas.demo.user.education
+epaas.demo.user.hr
+epaas.demo.user.manufacturing
+epaas.demo.user.purchase
+epaas.demo.user.sales
+epaas.demo.user.accounts
+epaas.demo.user.stock
+epaas.demo.user
